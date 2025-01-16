@@ -1,23 +1,27 @@
-$text-color:#050B20;
-$button-color:#405FF2;
-$grey-background:#FFE9F3;
+$text-color: #050b20;
+$button-color: #405ff2;
+$grey-background: #ffe9f3;
 
-
-@mixin repetad_display{
-    display: flex;
-    justify-content: space-between;
+@mixin repetad_display {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-@mixin center_elements{
-margin-left: auto;
-margin-right: auto;
-
+@mixin center_elements {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
-    max-width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
     width: 100%;
     margin: auto;
   }
-  
+}
